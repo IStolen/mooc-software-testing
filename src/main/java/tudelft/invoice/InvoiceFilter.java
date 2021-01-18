@@ -5,10 +5,11 @@ import java.util.List;
 
 public class InvoiceFilter {
 
+    private InvoiceDao dao;
+
     public List<Invoice> filter() {
 
-        InvoiceDao invoiceDao = new InvoiceDao();
-        List<Invoice> allInvoices = invoiceDao.all();
+        List<Invoice> allInvoices = dao.all();
 
         List<Invoice> filtered = new ArrayList<>();
 

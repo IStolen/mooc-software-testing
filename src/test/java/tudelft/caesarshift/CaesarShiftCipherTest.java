@@ -20,7 +20,7 @@ public class CaesarShiftCipherTest {
     @Test
     public void largeShift() {
         String result = word.caesarShiftCipher("abcd ef",28);
-        Assertions.assertEquals("invalid", result);
+        Assertions.assertEquals("cdef gh", result);
     }
 
     @Test
